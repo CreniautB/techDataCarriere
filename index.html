@@ -1,0 +1,398 @@
+<link
+  href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+  rel="stylesheet"
+/>
+<style>
+  .escpaceCarriere {
+    width: 1280px;
+    margin: auto;
+    font-family: "Work Sans";
+    overflow: hidden;
+  }
+  .chiffreCle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #21314d;
+    font-size: 22px;
+    margin-top: 1.5em;
+  }
+  .chiffreCle > div {
+    text-align: center;
+    font-weight: 600;
+  }
+  .textIntro {
+    margin: 0;
+    margin-top: 2em;
+  }
+  .textIntro > h2 {
+    color: #21314d;
+    margin: 0;
+  }
+  .textIntro > p {
+    font-size: 19px;
+    margin: 0;
+    text-align: justify;
+  }
+  .textIntro > .buttonCarriere {
+    margin-top: 1em;
+  }
+  .buttonCarriere {
+    background-color: #21314d;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+  }
+  .buttonCarriere > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+  }
+  .photos_job_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .leftContainerCarriere {
+    width: 65%;
+    margin: 1.5em 0;
+  }
+  .rightContainerCarriere {
+    width: 30%;
+    margin-top: -4em;
+  }
+  .photoContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .photoContainer > h4 {
+    background-color: #21314d;
+    padding: 0.3em 0.6em;
+    border-radius: 2px;
+    color: white;
+    font-weight: 500;
+    margin-top: 0.5em;
+  }
+
+  .photosGridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 600px;
+  }
+
+  .photosGriddiv1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .photosGriddiv2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .photosGriddiv3 {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+  .photosGriddiv4 {
+    grid-area: 3 / 1 / 5 / 2;
+  }
+  .photosGriddiv5 {
+    grid-area: 3 / 2 / 5 / 3;
+  }
+  .photosGriddiv6 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .photosGriddiv7 {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .photosGriddiv8 {
+    grid-area: 3 / 3 / 5 / 5;
+  }
+  .photosGriddiv9 {
+    grid-area: 1 / 4 / 3 / 5;
+  }
+  .photoGrid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .photoGrid {
+    padding: 0.3em;
+  }
+
+  .espaceJobAnnonce {
+    margin: 1.7em 0;
+    height: 1px;
+    background-color: #21314d;
+  }
+  .dZPint > a {
+    text-decoration: none;
+    color: #21314d;
+    margin-bottom: 0.1em;
+  }
+  .ilILvG {
+    margin-top: 0.3em;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .kEamSz {
+    margin-bottom: 1.5;
+  }
+  time > span {
+    text-transform: capitalize;
+    font-style: italic;
+    color: #21314d;
+    font-size: 14px;
+  }
+  .gRznTA > span {
+    font-weight: bold;
+    color: #21314d;
+    font-size: 15px;
+  }
+  .gTmGWh {
+    color: #21314d;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .sectionEspaceCarriere {
+    margin: 4em 0;
+  }
+  .sectionEspaceCarriereContent {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sectionEspaceCarriere > h2 {
+    color: #21314d;
+  }
+  .sectionEspaceCarriereContent > img {
+    width: 300px;
+  }
+  *.sectionEspaceCarriereP > p {
+    text-align: justify;
+    font-size: 17px;
+    line-height: 22px;
+    margin: 0;
+  }
+  .sectionEspaceCarriereP {
+    width: 500px;
+  }
+  .sectionEspaceCarriereP > .buttonCarriere {
+    float: right;
+  }
+  .LastSectionEspaceCarriere {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+  }
+  .LastSectionEspaceCarriere > p {
+    margin: 0;
+    font-size: 18px;
+  }
+  .LastSectionEspaceCarriere > p > span {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 50px;
+  }
+  .separateurSectionCarriere {
+    background-color: #21314d;
+    height: 3px;
+    margin: 2em 0;
+  }
+</style>
+
+<body>
+  <div class="escpaceCarriere">
+    <img src="./assets/hero.png" alt="" />
+    <div class="chiffreCle">
+      <div>
+        22 000 <br />
+        collaborateurs monde
+      </div>
+      <div>
+        60 Milliards $ <br />
+        CA monde
+      </div>
+      <div>
+        Année de création <br />
+        1974
+      </div>
+      <div>
+        Parité : <br />
+        55% Femmes / 45% Hommes
+      </div>
+    </div>
+    <div class="textIntro">
+      <h2>Nous sommes Tech Data, a TD SYNNEX Company,</h2>
+      <p>
+        <br />
+        Un leader dans la distribution et l'agrégation de solutions pour
+        l’écosystème informatique. Nous sommes une entreprise qui prend soin des
+        autres : nos partenaires, nos collègues, nos investisseurs et du monde
+        qui nous entoure. Et nous nous engageons à être un employeur de choix,
+        diversifié et inclusif, et une entreprise citoyenne.
+      </p>
+      <div class="buttonCarriere">
+        <a
+          href="https://techdata.wd1.myworkdayjobs.com/External"
+          target="_blank"
+          >Rejoignez-nous,<br />
+          envoyez votre CV !</a
+        >
+      </div>
+    </div>
+
+    <div class="photos_job_container">
+      <div class="leftContainerCarriere">
+        <div class="photoContainer">
+          <h4>Photos Bussy</h4>
+          <h4>Photos Colombes</h4>
+        </div>
+        <div class="photosGridContainer">
+          <div class="photosGriddiv1 photoGrid">
+            <img src="https://via.placeholder.com/700x250" alt="" />
+          </div>
+          <div class="photosGriddiv2 photoGrid">
+            <img src="https://via.placeholder.com/700x250" alt="" />
+          </div>
+          <div class="photosGriddiv3 photoGrid">
+            <img src="https://via.placeholder.com/700x250" alt="" />
+          </div>
+          <div class="photosGriddiv4 photoGrid">
+            <img src="https://via.placeholder.com/700x250" alt="" />
+          </div>
+          <div class="photosGriddiv5 photoGrid">
+            <img src="https://via.placeholder.com/700x250" alt="" />
+          </div>
+          <div class="photosGriddiv6 photoGrid">
+            <img src="https://via.placeholder.com/700x250" alt="" />
+          </div>
+          <div class="photosGriddiv7 photoGrid">
+            <img src="https://via.placeholder.com/700x250" alt="" />
+          </div>
+          <div class="photosGriddiv8 photoGrid">
+            <img src="https://via.placeholder.com/700x250" alt="" />
+          </div>
+          <div class="photosGriddiv9 photoGrid">
+            <img src="https://via.placeholder.com/700x250" alt="" />
+          </div>
+        </div>
+
+        <section class="sectionEspaceCarriere">
+          <h2>Culture d'entreprise</h2>
+          <div class="sectionEspaceCarriereContent">
+            <img src="https://via.placeholder.com/700x250" alt="" />
+            <div class="sectionEspaceCarriereP">
+              <p>
+                Notre culture d’entreprise, bien que reposant sur des valeurs,
+                des comportements et des pratiques professionnelles communes,
+                prend en compte la diversité des personnalités qui la composent.
+                Basée sur un code de conduite et une charte éthique mondiaux,
+                elle constitue notre ADN.
+              </p>
+              <div class="buttonCarriere">
+                <a href="./cultureEntreprise.html"
+                  >Découvrez notre <br />
+                  culture d'entreprise
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sectionEspaceCarriere">
+          <h2>Nos métiers</h2>
+          <div class="sectionEspaceCarriereContent">
+            <div class="sectionEspaceCarriereP">
+              <p>
+                Nous sommes un partenaire innovant qui aide nos clients à
+                maximiser la valeur de leurs investissements informatiques, à
+                démontrer leurs performances commerciales et à débloquer des
+                opportunités de croissance.
+              </p>
+              <div class="buttonCarriere">
+                <a href="./metiers.html"
+                  >Découvrez nos <br />
+                  métiers
+                </a>
+              </div>
+            </div>
+            <img src="https://via.placeholder.com/700x250" alt="" />
+          </div>
+        </section>
+        <section class="sectionEspaceCarriere">
+          <h2>Les alternants</h2>
+          <div class="sectionEspaceCarriereContent">
+            <img src="https://via.placeholder.com/700x250" alt="" />
+            <div class="sectionEspaceCarriereP">
+              <p>
+                Nous sommes un partenaire innovant qui aide nos clients à
+                maximiser la valeur de leurs investissements informatiques, à
+                démontrer leurs performances commerciales et à débloquer des
+                opportunités de croissance.
+              </p>
+              <div class="buttonCarriere">
+                <a href="./alternants.html"
+                  >Débutez votre carrière <br />
+                  chez Tech Data 
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="separateurSectionCarriere" />
+
+        <section class="LastSectionEspaceCarriere">
+          <p>
+            Rejoindre Tech Data, c'est rejoindre une entreprise où nous croyons
+            que chaque talent a son rôle à jouer pour créer l'écosystème IT de
+            demain. <br />
+            <span>Notre engagement c'est vous !</span>
+          </p>
+
+          <div class="buttonCarriere">
+            <a
+              href="https://techdata.wd1.myworkdayjobs.com/External"
+              target="_blank"
+              >Rejoignez-nous, <br />
+              envoyez votre CV !
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="rightContainerCarriere"></div>
+    </div>
+  </div>
+</body>
+
+<script>
+  fetch("https://apitechdata.herokuapp.com/job")
+    .then((reponse) => reponse.json())
+    .then(function (dataVideo) {
+      for (let n = 0; n < 15; n++) {
+        if (dataVideo[n] !== undefined) {
+          let jobContainer = document.createElement("div");
+          let espace = document.createElement("hr");
+          espace.classList.add("espaceJobAnnonce");
+          jobContainer.innerHTML = dataVideo[n];
+          jobContainer.classList.add("jobContainer");
+          document
+            .querySelector(".rightContainerCarriere")
+            .appendChild(jobContainer);
+          document.querySelector(".rightContainerCarriere").appendChild(espace);
+        }
+      }
+
+      document.querySelectorAll(".jobContainer").forEach((div) => {
+        let a = div.querySelector("a");
+        let link = a.href;
+        const words = link.split("fr");
+        a.href = "https://www.welcometothejungle.com/fr" + words[1];
+      });
+    });
+</script>
