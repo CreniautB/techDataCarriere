@@ -2,251 +2,36 @@
   href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
   rel="stylesheet"
 />
-<style>
-  .escpaceCarriere {
-    width: 1280px;
-    margin: auto;
-    font-family: "Work Sans";
-    overflow: hidden;
-  }
-  .chiffreCle {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    color: #21314d;
-    font-size: 22px;
-    margin-top: 2em;
-  }
-  .chiffreCle > div {
-    text-align: center;
-    font-weight: 600;
-  }
-  .textIntro {
-    margin: 0;
-    margin-top: 3em;
-  }
-  .textIntro > h2 {
-    color: #21314d;
-    margin: 0;
-    font-size: 32px;
-    font-weight: 500;
-  }
-  .textIntro > p {
-    font-size: 16px;
-    margin: 0;
-    text-align: justify;
-  }
-  .textIntro > .buttonCarriere {
-    margin-top: 1.8em;
-  }
-  .buttonCarriere {
-    background-color: #21314d;
-    padding: 0.5em 0.9em;
-    border-radius: 3px;
-    display: inline-block;
-    text-align: center;
-  }
-  .buttonCarriere > a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: white;
-    font-size: 13px;
-  }
-  .split_espaceCarriere_job_photo {
-    display: flex;
-    justify-content: space-between;
-  }
-  .leftContainerCarriere {
-    width: 65%;
-    margin: 1.5em 0;
-  }
-  .rightContainerCarriere {
-    width: 30%;
-    margin-top: 1.2em;
-  }
-  .photoContainer {
-    display: flex;
-    justify-content: space-around;
-  }
-  .photoContainer > h4 {
-    background-color: #21314d;
-    padding: 0.3em 0.6em;
-    border-radius: 2px;
-    color: white;
-    font-weight: 500;
-    margin-top: 1.5em;
-  }
-
-  .photosGridContainer {
-    margin-top: 1em;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    width: 100%;
-    height: 600px;
-  }
-
-  .photosGriddiv1 {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  .photosGriddiv2 {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-  .photosGriddiv3 {
-    grid-area: 1 / 2 / 3 / 3;
-  }
-  .photosGriddiv4 {
-    grid-area: 3 / 1 / 5 / 2;
-  }
-  .photosGriddiv5 {
-    grid-area: 3 / 2 / 5 / 3;
-  }
-  .photosGriddiv6 {
-    grid-area: 1 / 3 / 2 / 4;
-  }
-  .photosGriddiv7 {
-    grid-area: 2 / 3 / 3 / 4;
-  }
-  .photosGriddiv8 {
-    grid-area: 3 / 3 / 5 / 5;
-  }
-  .photosGriddiv9 {
-    grid-area: 1 / 4 / 3 / 5;
-  }
-  .photoGrid > img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-  }
-  .photoGrid {
-    padding: 0.3em;
-  }
-
-  .espaceJobAnnonce {
-    margin: 1.7em 0;
-    /* height: 10px; */
-    border-top: 3px dotted #21314d;
-  }
-  .dZPint > a {
-    text-decoration: none;
-    color: #21314d;
-    margin-bottom: 0.1em;
-  }
-  .ilILvG {
-    margin-top: 0.3em;
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    justify-content: space-between;
-  }
-  .kEamSz {
-    margin-bottom: 1.5;
-  }
-  time > span {
-    text-transform: capitalize;
-    font-style: italic;
-    color: #21314d;
-    font-size: 14px;
-  }
-  .gRznTA > span {
-    font-weight: bold;
-    color: #21314d;
-    font-size: 15px;
-  }
-  .gTmGWh {
-    color: #21314d;
-    font-weight: 500;
-    font-size: 13px;
-  }
-  .sectionEspaceCarriere {
-    margin: 4em 0;
-  }
-  .sectionEspaceCarriereContent {
-    display: flex;
-    justify-content: space-between;
-  }
-  .sectionEspaceCarriere > h2 {
-    color: #21314d;
-    font-size: 25px;
-    font-weight: 500;
-  }
-  .sectionEspaceCarriereContent > img {
-    width: 300px;
-  }
-  *.sectionEspaceCarriereP > p {
-    text-align: justify;
-    font-size: 14px;
-    line-height: 22px;
-    margin: 0;
-  }
-  .sectionEspaceCarriereP {
-    width: 500px;
-  }
-  .sectionEspaceCarriereP > .buttonCarriere {
-    float: right;
-  }
-  .LastSectionEspaceCarriere {
-    text-align: center;
-    width: 400px;
-    margin: auto;
-  }
-  .LastSectionEspaceCarriere > p {
-    margin: 0;
-    font-size: 18px;
-  }
-  .LastSectionEspaceCarriere > p > span {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 50px;
-  }
-  .separateurSectionCarriere {
-    background-color: #21314d;
-    height: 2px;
-    margin: 2em 0;
-  }
-</style>
-
+<link rel="stylesheet" href="./style.css" />
 <body>
-  <div class="escpaceCarriere">
-    <img src="./assets/hero.png" alt="" />
-    <div class="chiffreCle">
-      <div>
-        22 000 <br />
-        collaborateurs monde
-      </div>
-      <div>
-        60 Milliards $ <br />
-        CA monde
-      </div>
-      <div>
-        Année de création <br />
-        1974
-      </div>
-      <div>
-        Parité : <br />
-        55% Femmes / 45% Hommes
-      </div>
+  <div class="logoContainer">
+    <img src="./assets/logo.png" alt="" />
+  </div>
+  <img class="banniere" src="./assets/ban.jpg" alt="" />
+
+  <div class="mainEspace">
+    <div class="animationChiffre">
+      <h1>Dans le monde TD Synnex c'est :</h1>
+      <div class="word"></div>
     </div>
+    <hr class="sepIntro" />
     <div class="textIntro">
-      <h2>Nous sommes Tech Data, a TD SYNNEX Company,</h2>
       <p>
-        <br />
-        Un leader dans la distribution et l'agrégation de solutions pour
-        l’écosystème informatique. Nous sommes une entreprise qui prend soin des
-        autres : nos partenaires, nos collègues, nos investisseurs et du monde
-        qui nous entoure. Et nous nous engageons à être un employeur de choix,
+        Nous sommes <strong> Tech Data </strong>, a TD SYNNEX Company<br />
+        Un leader dans la distribution et l'agrégation de
+        <strong>solutions</strong> pour l’écosystème informatique. <br />Nous
+        sommes une entreprise qui prend soin des autres : nos
+        <strong>partenaires</strong> , nos collègues, nos investisseurs et du
+        monde qui nous entoure. <br />
+        Et nous nous engageons à être un <strong> employeur de choix </strong>,
         diversifié et inclusif, et une entreprise citoyenne.
       </p>
       <div class="buttonCarriere">
         <a
           href="https://techdata.wd1.myworkdayjobs.com/External"
           target="_blank"
-          >Rejoignez-nous,<br />
-          envoyez votre CV !</a
+          >Découvrez toutes <br />
+          nos offres d'emploi</a
         >
       </div>
     </div>
@@ -258,39 +43,39 @@
           <h4>Photos Colombes</h4>
         </div> -->
         <div class="photosGridContainer">
-          <div class="photosGriddiv1 photoGrid">
-            <img src="https://via.placeholder.com/700x250" alt="" />
-          </div>
           <div class="photosGriddiv2 photoGrid">
-            <img src="https://via.placeholder.com/700x250" alt="" />
+            <img
+              src="./assets/Banking_Financial_Services_Julius_Baer_Data_Science-800x534.jpg"
+              alt=""
+            />
+          </div>
+          <div class="photosGriddiv1 photoGrid">
+            <img src="./assets/Tech-Data-France.jpg" alt="" />
           </div>
           <div class="photosGriddiv3 photoGrid">
-            <img src="https://via.placeholder.com/700x250" alt="" />
+            <img
+              src="./assets/c879ef5d-3a38-4a5f-814b-0b0350e9145a.webp"
+              alt=""
+            />
           </div>
+
           <div class="photosGriddiv4 photoGrid">
-            <img src="https://via.placeholder.com/700x250" alt="" />
+            <img src="./assets/groveport-oh-location.jpg" alt="" />
           </div>
           <div class="photosGriddiv5 photoGrid">
-            <img src="https://via.placeholder.com/700x250" alt="" />
+            <img src="./assets/Tech-Data_Gebaeude_Schweiz.jpg" alt="" />
           </div>
           <div class="photosGriddiv6 photoGrid">
-            <img src="https://via.placeholder.com/700x250" alt="" />
-          </div>
-          <div class="photosGriddiv7 photoGrid">
-            <img src="https://via.placeholder.com/700x250" alt="" />
-          </div>
-          <div class="photosGriddiv8 photoGrid">
-            <img src="https://via.placeholder.com/700x250" alt="" />
-          </div>
-          <div class="photosGriddiv9 photoGrid">
-            <img src="https://via.placeholder.com/700x250" alt="" />
+            <img src="./assets/KIST_01_580px.jpg" alt="" />
           </div>
         </div>
 
         <section class="sectionEspaceCarriere">
           <h2>Culture d'entreprise</h2>
           <div class="sectionEspaceCarriereContent">
-            <img src="https://via.placeholder.com/700x250" alt="" />
+            <div class="imgContainer">
+              <img src="./assets/cultureEntreprise.webp" alt="" />
+            </div>
             <div class="sectionEspaceCarriereP">
               <p>
                 Notre culture d’entreprise, bien que reposant sur des valeurs,
@@ -310,7 +95,7 @@
         </section>
 
         <section class="sectionEspaceCarriere">
-          <h2>Nos métiers</h2>
+          <h2 class="rightAlign">Nos métiers</h2>
           <div class="sectionEspaceCarriereContent">
             <div class="sectionEspaceCarriereP">
               <p>
@@ -320,19 +105,24 @@
                 opportunités de croissance.
               </p>
               <div class="buttonCarriere">
-                <a href="./metiers.html"
+                <a href="./nosMetiers.html"
                   >Découvrez nos <br />
                   métiers
                 </a>
               </div>
             </div>
-            <img src="https://via.placeholder.com/700x250" alt="" />
+            <div class="imgContainer">
+              <img src="./assets/job.jpg" alt="" />
+            </div>
           </div>
         </section>
         <section class="sectionEspaceCarriere">
           <h2>Les alternants</h2>
           <div class="sectionEspaceCarriereContent">
-            <img src="https://via.placeholder.com/700x250" alt="" />
+            <div class="imgContainer">
+              <img src="./assets/alternance.jpeg" alt="" />
+            </div>
+
             <div class="sectionEspaceCarriereP">
               <p>
                 Nous sommes un partenaire innovant qui aide nos clients à
@@ -370,34 +160,364 @@
           </div>
         </section>
       </div>
-      <div class="rightContainerCarriere"></div>
+      <div class="rightContainerCarriere">
+        <div id="welcomekit-embed">
+          <h3 class="titleWelcomeToTheJugnle">
+            Voir les dernières offres Welcome to the Jungle
+          </h3>
+        </div>
+        <div class="videoContainerIndex">
+          <h4>Découvrez nos collaborateurs <br> en vidéo</h4>
+          <div class="videoBox">
+            <video controls width="250">
+              <source
+                src="assets/video/Découvrez Tech Data avec Christelle, Ingénieure Commerciale Terrain.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <h3>Découvrez Tech Data avec Christelle, Ingénieure Commerciale Terrain</h3>
+          </div>
+          <div class="videoBox">
+            <video controls width="250">
+              <source
+                src="/assets/video/Découvrez Tech Data avec Mathilde, VP Advanced Solutions.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <h3>Découvrez Tech Data avec Mathilde, VP Advanced Solutions</h3>
+            <video controls width="250">
+              <source
+                src="/assets/video/Découvrez Tech Data avec Wissem, Commercial Sédentaire Spécialiste.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <h3>Découvrez Tech Data avec Wissem, Commercial Sédentaire Spécialiste</h3>
+          </div>
+
+      </div>
     </div>
   </div>
 </body>
 
+<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"
+></script>
 <script>
-  fetch("https://apitechdata.herokuapp.com/job")
-    .then((reponse) => reponse.json())
-    .then(function (dataVideo) {
-      for (let n = 0; n < 10; n++) {
-        if (dataVideo[n] !== undefined) {
-          let jobContainer = document.createElement("div");
-          let espace = document.createElement("hr");
-          espace.classList.add("espaceJobAnnonce");
-          jobContainer.innerHTML = dataVideo[n];
-          jobContainer.classList.add("jobContainer");
-          document
-            .querySelector(".rightContainerCarriere")
-            .appendChild(jobContainer);
-          document.querySelector(".rightContainerCarriere").appendChild(espace);
+  (function () {
+    var e,
+      t,
+      n = function (e, t) {
+        return function () {
+          return e.apply(t, arguments);
+        };
+      };
+    (t = {
+      noJobs: {
+        fr: "D\xe9sol\xe9, nous n'avons pas d'offres en ce moment.",
+        en: "Sorry, no job opening available at this time.",
+      },
+      startDate: { fr: "Date de d\xe9but :", en: "Start Date:" },
+    }),
+      (window.welcomeKitReady = function (e) {
+        return "loading" !== document.readyState
+          ? e()
+          : document.addEventListener("DOMContentLoaded", e);
+      }),
+      (e = (function () {
+        function e(e, t) {
+          null == t && (t = "welcomekit-"),
+            (this.renderOffices = n(this.renderOffices, this)),
+            (this.renderDepartments = n(this.renderDepartments, this)),
+            (this.renderWidget = n(this.renderWidget, this)),
+            (this.render = n(this.render, this)),
+            (this.classPrefix = t),
+            (this.reference = e),
+            (this.data = null),
+            (this.options = {
+              group: "job",
+              locale: "fr",
+              display: [],
+              website: null,
+            }),
+            (this.offices = []),
+            (this.departments = []);
+        }
+        return (
+          (e.prototype.group = function (e) {
+            return (this.options.group = e);
+          }),
+          (e.prototype.display = function (e) {
+            return (this.options.display = Array.isArray(e)
+              ? e
+              : JSON.parse(e));
+          }),
+          (e.prototype.locale = function (e) {
+            return (this.options.locale = e);
+          }),
+          (e.prototype.website = function (e) {
+            return (this.options.website = e);
+          }),
+          (e.prototype.render = function () {
+            return this.fetch(this.renderWidget);
+          }),
+          (e.prototype.fetch = function (e) {
+            var t;
+            return (
+              (t = new XMLHttpRequest()),
+              t.open(
+                "GET",
+                "https://www.welcomekit.co/api/v1/embed?organization_reference=" +
+                  this.reference,
+                !0
+              ),
+              (t.onload = function () {
+                return t.status >= 200 && t.status < 400
+                  ? e(JSON.parse(t.responseText))
+                  : console.log("Fail to load WTTJ widget");
+              }),
+              (t.onerror = function () {
+                return console.log("Fail to load WTTJ widget");
+              }),
+              t.send()
+            );
+          }),
+          (e.prototype.renderWidget = function (e) {
+            var t, n, r, i, s, o;
+            if (
+              ((this.data = e), (t = []), (n = []), 0 === this.data.jobs.length)
+            )
+              return this.$container().appendChild(this.renderNothing());
+            for (o = this.data.jobs, i = 0, s = o.length; i < s; i++)
+              (r = o[i]),
+                r.department &&
+                  -1 === t.indexOf(r.department.id) &&
+                  (t.push(r.department.id),
+                  this.departments.push(r.department)),
+                r.office &&
+                  -1 === n.indexOf(r.office.id) &&
+                  (n.push(r.office.id), this.offices.push(r.office));
+            return "office" === this.options.group
+              ? this.renderOffices()
+              : "department" === this.options.group
+              ? this.renderDepartments()
+              : this.$container().appendChild(this.renderJobs(e.jobs));
+          }),
+          (e.prototype.$container = function () {
+            return null != this._container
+              ? this._container
+              : (this._container = document.getElementById("welcomekit-embed"));
+          }),
+          (e.prototype.renderDepartments = function () {
+            var e, t, n, r, i;
+            for (
+              e = document.createElement("div"),
+                e.className = this.classPrefix + "departments",
+                i = this.departments.sort(function (e, t) {
+                  return e.name < t.name ? -1 : e.name > t.name ? 1 : 0;
+                }),
+                n = 0,
+                r = i.length;
+              n < r;
+              n++
+            )
+              (t = i[n]), e.appendChild(this.renderDepartment(t));
+            return this.$container().appendChild(e);
+          }),
+          (e.prototype.renderDepartment = function (e) {}),
+          (e.prototype.renderOffices = function () {}),
+          (e.prototype.renderOffice = function (e) {
+            var t, n, r, i;
+            return (
+              (r = document.createElement("div")),
+              (r.className = this.classPrefix + "office"),
+              e.city &&
+                ((i = document.createElement("h2")),
+                (i.className = this.classPrefix + "office-city"),
+                (i.innerHTML = e.city),
+                r.appendChild(i)),
+              (n = function () {
+                var n, r, i, s;
+                for (
+                  i = this.data.jobs, s = [], n = 0, r = i.length;
+                  n < r;
+                  n++
+                )
+                  (t = i[n]), t.office && t.office.id === e.id && s.push(t);
+                return s;
+              }.call(this)),
+              r.appendChild(this.renderJobs(n)),
+              r
+            );
+          }),
+          (e.prototype.renderJobs = function (e) {
+            var t, n, r, i, s;
+            for (
+              t = document.createElement("ul"),
+                t.className = this.classPrefix + "jobs-list",
+                s = e.sort(function (e, t) {
+                  return e.name < t.name ? -1 : e.name > t.name ? 1 : 0;
+                }),
+                r = 0,
+                i = 10;
+              r < i;
+              r++
+            )
+              (n = s[r]), t.appendChild(this.renderJob(n));
+            return t;
+          }),
+          (e.prototype.renderJob = function (e) {
+            var n, r, i, s, o, a, c, d, l;
+            (s = document.createElement("li")),
+              (s.className = this.classPrefix + "jobs-list-item"),
+              (a = document.createElement("a")),
+              (a.className = this.classPrefix + "jobs-list-item-link"),
+              (a.href = this.jobUrl(e)),
+              (a.target = "_blank"),
+              (c = document.createElement("h3")),
+              (c.className = this.classPrefix + "job-name"),
+              (c.innerHTML = e.name),
+              a.appendChild(c),
+              s.appendChild(a),
+              (i = document.createElement("ul")),
+              (i.className = this.classPrefix + "job-infos"),
+              (d = this.options.display);
+            for (n in d) {
+              switch (((o = d[n]), (r = document.createElement("li")), o)) {
+                case "description":
+                  l = e.description;
+                  break;
+                case "department":
+                  l = e.department ? e.department.name : "";
+                  break;
+                case "officeCity":
+                  l = e.office ? e.office.city : "";
+                  break;
+                case "officeCountry":
+                  l = e.office ? e.office.country[this.options.locale] : "";
+                  break;
+                case "contractType":
+                  l = e.contract_type
+                    ? e.contract_type[this.options.locale]
+                    : "";
+                  break;
+                case "createdAt":
+                  l = e.created_at[this.options.locale];
+                  break;
+                case "startDate":
+                  l = e.start_date
+                    ? t.startDate[this.options.locale] +
+                      " " +
+                      e.start_date[this.options.locale]
+                    : "";
+                  break;
+                default:
+                  l = null;
+              }
+              l &&
+                ((r.className = this.classPrefix + "job-" + o),
+                (r.innerHTML = l),
+                i.appendChild(r));
+            }
+            return a.appendChild(i), s;
+          }),
+          (e.prototype.renderNothing = function () {
+            var e;
+            return (
+              (e = document.createElement("div")),
+              (e.className = this.classPrefix + "warning"),
+              (e.innerHTML = t.noJobs[this.options.locale]),
+              e
+            );
+          }),
+          (e.prototype.jobUrl = function (e) {
+            var t;
+            return e.websites_urls.length
+              ? ((t = e.websites_urls.filter(
+                  (function (e) {
+                    return function (t) {
+                      return (
+                        t.website_reference === e.options.website ||
+                        "wk-careers_" + t.website_reference ===
+                          e.options.website
+                      );
+                    };
+                  })(this)
+                )),
+                t.length ? t[0].url : e.websites_urls[0].url)
+              : this.data.websites[0].root_url;
+          }),
+          e
+        );
+      })()),
+      (window.WelcomeKitEmbed = e);
+  }.call(this));
+</script>
+
+<script type="text/javascript">
+  welcomeKitReady(function () {
+    var wk = new WelcomeKitEmbed("1P4ybG0");
+    wk.group("job");
+    wk.display(["department", "officeCity", "contractType"]);
+    wk.locale("fr");
+    wk.website("wttj_fr");
+    wk.render();
+  });
+</script>
+<script>
+  var words = [
+      "22 000 collaborateurs monde ",
+      "60 Milliards $ CA monde ",
+      "Année de création 1974",
+      "100 Pays",
+      "125 000 clients",
+      "+ de 50 000 transactions par jour ",
+      "Et en France, c'est XX salariés sur 2 sites ",
+      " 55% Femmes et 45% Hommes",
+      "un catalogue de 150 fournisseurs proposant 200.000 références  ",
+    ],
+    part,
+    i = 0,
+    offset = 0,
+    len = words.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 40,
+    speed = 30;
+  var wordflick = function () {
+    setInterval(function () {
+      if (forwards) {
+        if (offset >= words[i].length) {
+          ++skip_count;
+          if (skip_count == skip_delay) {
+            forwards = false;
+            skip_count = 0;
+          }
+        }
+      } else {
+        if (offset == 0) {
+          forwards = true;
+          i++;
+          offset = 0;
+          if (i >= len) {
+            i = 0;
+          }
         }
       }
+      part = words[i].substr(0, offset);
+      if (skip_count == 0) {
+        if (forwards) {
+          offset++;
+        } else {
+          offset--;
+        }
+      }
+      $(".word").text(part);
+    }, speed);
+  };
 
-      document.querySelectorAll(".jobContainer").forEach((div) => {
-        let a = div.querySelector("a");
-        let link = a.href;
-        const words = link.split("fr");
-        a.href = "https://www.welcometothejungle.com/fr" + words[1];
-      });
-    });
+  $(document).ready(function () {
+    wordflick();
+  });
 </script>

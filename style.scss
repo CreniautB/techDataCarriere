@@ -1,0 +1,493 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Work Sans";
+}
+.logoContainer {
+  text-align: center;
+}
+.logoContainer > img {
+  width: 300px;
+  margin: auto;
+  margin: 2em 0;
+}
+.mainEspace {
+  width: 80vw;
+  margin: auto;
+  font-family: "Work Sans";
+}
+
+.banniere {
+  width: 100vw;
+}
+
+.animationChiffre {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  width: 100%;
+}
+.animationChiffre > h1 {
+  color: #00548b;
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+  padding-right: 2em;
+  width: 40%;
+}
+.word {
+  color: #00548b;
+  font-size: 29px;
+  font-weight: 400;
+  padding-bottom: 0.5em;
+  max-width: 45%;
+}
+.sepIntro {
+  border-bottom: 1px #00548b solid;
+  width: 40vw;
+  margin: 0em auto 2.5em auto;
+  display: none;
+}
+
+h2 {
+  border-bottom: 1.5px solid #00548b;
+  font-weight: 600;
+  font-size: 22px;
+  color: 00548b;
+  display: inline-block;
+  padding: 0.7em 0.7em 0.7em 0;
+  border-radius: 2px;
+  text-transform: uppercase;
+  min-width: 20vw;
+}
+
+.textIntro > p {
+  font-size: 17px;
+  margin: 0;
+  line-height: 25px;
+  text-align: justify;
+  color: #00548b;
+}
+.textIntro > .buttonCarriere {
+  margin-top: 2.2em;
+  margin-bottom: 1em;
+}
+.buttonCarriere {
+  padding: 0.5em 0.9em;
+  border-radius: 1px;
+  display: inline-block;
+  text-align: center;
+  border: 1.5px solid #00548b;
+  cursor: pointer;
+}
+.buttonCarriere > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  color: #00548b;
+}
+.split_espaceCarriere_job_photo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.leftContainerCarriere {
+  width: 65%;
+  margin: 1.5em 0;
+}
+.rightContainerCarriere {
+  width: 30%;
+  margin-top: 1.2em;
+}
+
+.photosGridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photoGrid > img {
+  max-width: 250px;
+  height: auto;
+}
+.photoGrid {
+  padding: 0.3em;
+  display: flex;
+  align-items: center;
+}
+
+.titleWelcomeToTheJugnle {
+  text-align: center;
+  color: #00548b;
+  font-size: 15px;
+  font-weight: 500;
+  width: 50%;
+  margin: 1em auto 2em auto;
+  text-decoration: underline;
+}
+
+#welcomekit-embed {
+  border: 1px #00548b solid !important;
+}
+.welcomekit-job-name {
+  font-size: 14px;
+  text-align: center;
+}
+.welcomekit-jobs-list {
+  width: 90%;
+  margin: auto;
+  padding: 0 0 1.5em 0;
+}
+.welcomekit-jobs-list-item-link {
+  text-decoration: none;
+  color: #00548b;
+  margin-bottom: 0.1em;
+}
+.welcomekit-jobs-list-item {
+  margin-top: 1em auto;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.welcomekit-job-infos {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+}
+.welcomekit-job-infos > li {
+  margin: 0 1em;
+}
+
+.sectionEspaceCarriere {
+  margin: 0em 0;
+}
+.sectionEspaceCarriereContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgContainer {
+  width: 40%;
+}
+.imgContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.sectionEspaceCarriereP > p {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+.sectionEspaceCarriereP {
+  width: 50%;
+}
+.sectionEspaceCarriereP > .buttonCarriere {
+  float: right;
+}
+.LastSectionEspaceCarriere {
+  text-align: center;
+  width: 400px;
+  margin: 4em auto 0 auto;
+  color: #00548b;
+}
+.LastSectionEspaceCarriere > p {
+  margin: 0;
+  font-size: 18px;
+}
+.LastSectionEspaceCarriere > p > span {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 50px;
+}
+.separateurSectionCarriere {
+  display: none;
+}
+
+.videoContainerIndex {
+  h4 {
+    text-align: center;
+    font-size: 18px;
+    width: 80%;
+    margin: 2em auto 1em auto;
+    color: #00548b;
+    font-weight: 700;
+  }
+}
+.videoBox {
+  text-align: center;
+  margin-bottom: 2em;
+  h3 {
+    font-size: 14px;
+    color: #00548b;
+  }
+  video {
+    width: 300px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mainEspace {
+    width: 90%;
+  }
+  .split_espaceCarriere_job_photo {
+    flex-direction: column;
+  }
+  .leftContainerCarriere {
+    width: 100%;
+  }
+  .rightContainerCarriere {
+    width: 50%;
+  }
+  .rightContainerCarriere {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    #welcomekit-embed {
+      width: 45%;
+    }
+    .videoContainerIndex {
+      width: 45%;
+      h4 {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// CULTURE ENTREPRISE PAGE ------------------------------------------------------------------------
+
+.espaceCultureEntreprise {
+  width: 1280px;
+  margin: auto;
+  font-family: "Work Sans";
+  overflow: hidden;
+}
+.chiffreCle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: #21314d;
+  font-size: 22px;
+  margin-top: 1.5em;
+}
+.chiffreCle > div {
+  text-align: center;
+  font-weight: 600;
+}
+
+.buttonCarriere {
+  background-color: #21314d;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+}
+.buttonCarriere > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+}
+.splitLeftRight {
+  display: flex;
+  justify-content: space-between;
+}
+.leftContainerCulture {
+  width: 70%;
+}
+.rightContainerCulture {
+  width: 29%;
+}
+.leftContainerCulture > h2 {
+  color: #21314d;
+  margin: 0;
+  margin: 2em 0 1em 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/* Valeurs Entreprise */
+.introValeursEntreprise {
+  margin: auto;
+  font-size: 18px;
+  font-weight: 400;
+  color: #21314d;
+}
+.valeursEntrepriseContainerFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sectionValeursEntreprise {
+  min-width: 400px;
+}
+.sectionValeursEntreprise > h3 {
+  font-size: 23px;
+  font-weight: 500;
+  color: #21314d;
+}
+.sectionValeursEntreprise > p {
+  margin: 0.5em 0;
+  font-size: 16px;
+}
+/* Politique QHSE */
+.sectionPolitiqueQHSE {
+}
+.politiqueQHSE_split_content {
+  display: flex;
+  justify-content: space-between;
+}
+.politiqueQHSE_content_Right_Part {
+  width: 47%;
+}
+.politiqueQHSE_content_Right_Part > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.politiqueQHSE_content_Left_Part {
+  width: 47%;
+}
+.politiqueQHSE_content_Left_Part > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.demarcheRse > h2 {
+  color: #21314d;
+  font-weight: 500;
+}
+.demarcheRse > img {
+  float: left;
+  margin: 1em 1em 2em 0;
+}
+.sectionDemarcheRse > h3 {
+  color: #21314d;
+  margin-bottom: 0.2em;
+  font-weight: 500;
+}
+.sectionDemarcheRse > p {
+  margin-top: 0.4em;
+  font-size: 16px;
+}
+.sectionPolitiqueInclusion {
+}
+.politiqueInclusionsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.politiqueInclusionsContent {
+  width: 280px;
+  text-align: center;
+  margin: 1em auto;
+}
+.politiqueInclusionsContent > h3 {
+  color: #21314d;
+  font-size: 20px;
+  font-weight: 500;
+}
+.politiqueInclusionsContent > img {
+  width: 80%;
+  object-fit: contain;
+}
+.rightContainerCulture {
+}
+.videoCultureEntreprise {
+}
+.feedResaux {
+}
+.containerVideo {
+  justify-content: center;
+  text-align: right;
+}
+.containerVideo > a {
+  width: 350px;
+  margin: auto;
+}
+.containerVideo > a > img {
+  width: 350px;
+  height: 250px;
+  object-fit: contain;
+}
+.feedResaux {
+  text-align: right;
+}
+
+.espaceAlternantsCarriere {
+  width: 1280px;
+  margin: auto;
+  font-family: "Work Sans";
+  overflow: hidden;
+}
+.chiffreCle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: #21314d;
+  font-size: 22px;
+  margin-top: 2em;
+}
+.chiffreCle > div {
+  text-align: center;
+  font-weight: 600;
+}
+
+.buttonCarriere {
+  background-color: #21314d;
+  padding: 0.5em 0.9em;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+}
+.buttonCarriere > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  font-size: 13px;
+}
+
+.espaceNosMetiersCarriere {
+  width: 1280px;
+  margin: auto;
+  font-family: "Work Sans";
+  overflow: hidden;
+}
+.chiffreCle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: #21314d;
+  font-size: 22px;
+  margin-top: 2em;
+}
+.chiffreCle > div {
+  text-align: center;
+  font-weight: 600;
+}
+
+.buttonCarriere {
+  background-color: #21314d;
+  padding: 0.5em 0.9em;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+}
+.buttonCarriere > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  font-size: 13px;
+}
