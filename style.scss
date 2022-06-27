@@ -5,6 +5,7 @@ html {
   overflow-x: hidden;
   font-family: "Work Sans";
 }
+
 .logoContainer {
   text-align: center;
 }
@@ -35,14 +36,15 @@ html {
   font-size: 32px;
   font-weight: 600;
   padding-right: 2em;
-  width: 40%;
+  width: 45%;
 }
 .animation2 {
-  padding-left: 20vw;
+  padding-left: 15vw;
   margin-top: 0;
   margin-bottom: 2em;
   h1 {
     font-size: 27px;
+    color: #00548b;
   }
   .word2 {
     font-size: 24px;
@@ -56,6 +58,9 @@ html {
   font-weight: 400;
   padding-bottom: 0.5em;
   max-width: 45%;
+}
+.word2 {
+  color: #00548b;
 }
 .sepIntro {
   border-bottom: 1px #00548b solid;
@@ -77,7 +82,7 @@ h2 {
 }
 
 .textIntro > p {
-  font-size: 17px;
+  font-size: 1rem;
   margin: 0;
   line-height: 25px;
   text-align: justify;
@@ -96,13 +101,13 @@ h2 {
   border-radius: 1px;
   display: inline-block;
   text-align: center;
-  border: 2.5px solid #00548b;
+  border: 2px solid #00548b;
   cursor: pointer;
 }
 .buttonCarriere > a {
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 13px;
   color: #00548b;
 }
@@ -189,26 +194,29 @@ h2 {
 }
 
 .imgContainer {
-  width: 40%;
+  max-width: 40%;
 }
 .imgContainer > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  max-height: 250px !important;
 }
 .sectionEspaceCarriereP > p {
   text-align: justify;
   font-size: 15px;
   line-height: 22px;
   margin: 0 0 1em 0;
-  color: #21314d;
+  color: #00548b;
 }
 .sectionEspaceCarriereP {
   width: 50%;
 }
-.sectionEspaceCarriereP > .buttonCarriere {
-  float: right;
+.containerBtn {
+  width: 100%;
+  text-align: center;
 }
+
 .LastSectionEspaceCarriere {
   text-align: center;
   max-width: 500px;
@@ -252,6 +260,47 @@ h2 {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .word,
+  .word2 {
+    height: 100px;
+  }
+  .animationChiffre {
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+
+    h1,
+    div {
+      width: 95%;
+      padding: 0;
+    }
+  }
+  .photoGrid > img {
+    max-width: 150px;
+    height: auto;
+  }
+  .titleWelcomeToTheJugnle {
+    width: 90%;
+  }
+  .sectionEspaceCarriereContent {
+    flex-direction: column;
+    justify-content: center;
+    .imgContainer {
+      margin: 1.5em auto;
+    }
+  }
+  .videoBox {
+    video {
+      width: 150px;
+    }
+  }
+
+  .sectionEspaceCarriereP {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .mainEspace {
     width: 90%;
@@ -279,11 +328,9 @@ h2 {
       }
     }
   }
-  .textIntro > p {
-    font-size: 14px;
-  }
-  .sectionEspaceCarriereP > p {
-    font-size: 17px;
+
+  .animation2 {
+    padding: 0;
   }
 }
 
@@ -351,8 +398,7 @@ h2 {
   font-size: 16px;
 }
 /* Politique QHSE */
-.sectionPolitiqueQHSE {
-}
+
 .politiqueQHSE_split_content {
   display: flex;
   justify-content: space-between;
@@ -390,8 +436,7 @@ h2 {
   margin-top: 0.4em;
   font-size: 16px;
 }
-.sectionPolitiqueInclusion {
-}
+
 .politiqueInclusionsContainer {
   display: flex;
   justify-content: space-between;
@@ -410,12 +455,7 @@ h2 {
   width: 80%;
   object-fit: contain;
 }
-.rightContainerCulture {
-}
-.videoCultureEntreprise {
-}
-.feedResaux {
-}
+
 .containerVideo {
   justify-content: center;
   text-align: right;
