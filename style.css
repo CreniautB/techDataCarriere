@@ -40,16 +40,30 @@ html {
 
 .animationChiffre > h1 {
   color: #00548b;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 600;
-  padding-bottom: 0.5em;
   padding-right: 2em;
   width: 40%;
 }
 
-.word {
+.animation2 {
+  padding-left: 20vw;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.animation2 h1 {
+  font-size: 27px;
+}
+
+.animation2 .word2 {
+  font-size: 24px;
+}
+
+.word,
+.word2 {
   color: #00548b;
-  font-size: 29px;
+  font-size: 27px;
   font-weight: 400;
   padding-bottom: 0.5em;
   max-width: 45%;
@@ -82,6 +96,10 @@ h2 {
   color: #00548b;
 }
 
+.textIntro > p strong {
+  color: #11b6df;
+}
+
 .textIntro > .buttonCarriere {
   margin-top: 2.2em;
   margin-bottom: 1em;
@@ -92,14 +110,14 @@ h2 {
   border-radius: 1px;
   display: inline-block;
   text-align: center;
-  border: 1.5px solid #00548b;
+  border: 2.5px solid #00548b;
   cursor: pointer;
 }
 
 .buttonCarriere > a {
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 13px;
   color: #00548b;
 }
@@ -208,7 +226,7 @@ h2 {
 }
 
 .sectionEspaceCarriere {
-  margin: 0em 0;
+  margin: 2em 0;
 }
 
 .sectionEspaceCarriereContent {
@@ -233,9 +251,10 @@ h2 {
 
 .sectionEspaceCarriereP > p {
   text-align: justify;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 22px;
-  margin: 0;
+  margin: 0 0 1em 0;
+  color: #21314d;
 }
 
 .sectionEspaceCarriereP {
@@ -248,8 +267,8 @@ h2 {
 
 .LastSectionEspaceCarriere {
   text-align: center;
-  width: 400px;
-  margin: 4em auto 0 auto;
+  max-width: 500px;
+  margin: 2em auto;
   color: #00548b;
 }
 
@@ -327,6 +346,12 @@ h2 {
   .rightContainerCarriere .videoContainerIndex h4 {
     margin-top: 0;
   }
+  .textIntro > p {
+    font-size: 14px;
+  }
+  .sectionEspaceCarriereP > p {
+    font-size: 17px;
+  }
 }
 
 .espaceCultureEntreprise {
@@ -352,22 +377,6 @@ h2 {
 .chiffreCle > div {
   text-align: center;
   font-weight: 600;
-}
-
-.buttonCarriere {
-  background-color: #21314d;
-  padding: 0.5em 1em;
-  border-radius: 3px;
-  display: inline-block;
-  text-align: center;
-}
-
-.buttonCarriere > a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: white;
-  font-size: 14px;
 }
 
 .splitLeftRight {
@@ -557,22 +566,6 @@ h2 {
   font-weight: 600;
 }
 
-.buttonCarriere {
-  background-color: #21314d;
-  padding: 0.5em 0.9em;
-  border-radius: 3px;
-  display: inline-block;
-  text-align: center;
-}
-
-.buttonCarriere > a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: white;
-  font-size: 13px;
-}
-
 .espaceNosMetiersCarriere {
   width: 1280px;
   margin: auto;
@@ -596,21 +589,5 @@ h2 {
 .chiffreCle > div {
   text-align: center;
   font-weight: 600;
-}
-
-.buttonCarriere {
-  background-color: #21314d;
-  padding: 0.5em 0.9em;
-  border-radius: 3px;
-  display: inline-block;
-  text-align: center;
-}
-
-.buttonCarriere > a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: white;
-  font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,17 +14,25 @@
       <h1>Dans le monde TD Synnex c'est :</h1>
       <div class="word"></div>
     </div>
+    <div class="animationChiffre animation2">
+      <h1 class="test" >Et en France c'est:</h1>
+      <div class="word2"></div>
+
+
+    </div>
     <hr class="sepIntro" />
     <div class="textIntro">
       <p>
-        Nous sommes <strong> Tech Data </strong>, a TD SYNNEX Company<br />
-        Un leader dans la distribution et l'agrégation de
-        <strong>solutions</strong> pour l’écosystème informatique. <br />Nous
-        sommes une entreprise qui prend soin des autres : nos
-        <strong>partenaires</strong> , nos collègues, nos investisseurs et du
-        monde qui nous entoure. <br />
-        Et nous nous engageons à être un <strong> employeur de choix </strong>,
-        diversifié et inclusif, et une entreprise citoyenne.
+        Bienvenue chez <strong> Tech Data ! </strong> Filiale française du leader mondial de la distribution informatique, <strong>TD Synnex,</strong> notre entreprise est présente dans 100 pays et sert plus de 125 000 clients à travers le monde. 
+        <br>
+        Notre vaste catalogue de produits et de <strong>solutions,</strong> nos offres de services à valeur ajoutée et notre expertise du secteur, permettent à nos partenaires revendeurs de commercialiser les produits et technologies dont leurs clients ont besoin, pour se développer aujourd'hui et demain. 
+        <br>
+        Nous sommes une entreprise qui prend soin des autres : nos partenaires, nos collègues, nos investisseurs et du <strong> monde qui nous entoure.</strong> De l'intégration des nouveaux entrants en passant par la <strong>formation et la mobilité interne, </strong>
+         le développement professionnel de chacun.e est une priorité pour nous. 
+        <br>
+        Notre ambition : anticiper les évolutions permanentes de l'écosystème IT et devenir un orchestrateur de solutions pour nos clients. 
+
+ 
       </p>
       <div class="buttonCarriere">
         <a
@@ -117,7 +125,7 @@
           </div>
         </section>
         <section class="sectionEspaceCarriere">
-          <h2>Les alternants</h2>
+          <h2>Stage & Alternance</h2>
           <div class="sectionEspaceCarriereContent">
             <div class="imgContainer">
               <img src="./assets/alternance.jpeg" alt="" />
@@ -137,26 +145,6 @@
                 </a>
               </div>
             </div>
-          </div>
-        </section>
-
-        <hr class="separateurSectionCarriere" />
-
-        <section class="LastSectionEspaceCarriere">
-          <p>
-            Rejoindre Tech Data, c'est rejoindre une entreprise où nous croyons
-            que chaque talent a son rôle à jouer pour créer l'écosystème IT de
-            demain. <br />
-            <span>Notre engagement c'est vous !</span>
-          </p>
-
-          <div class="buttonCarriere">
-            <a
-              href="https://techdata.wd1.myworkdayjobs.com/External"
-              target="_blank"
-              >Rejoignez-nous, <br />
-              envoyez votre CV !
-            </a>
           </div>
         </section>
       </div>
@@ -196,6 +184,23 @@
 
       </div>
     </div>
+    <section class="LastSectionEspaceCarriere">
+      <p>
+        Rejoindre Tech Data, c'est rejoindre une entreprise où nous croyons
+        que chaque talent a son rôle à jouer pour créer l'écosystème IT de
+        demain. <br />
+        <span>Notre engagement c'est vous !</span>
+      </p>
+
+      <div class="buttonCarriere">
+        <a
+          href="https://techdata.wd1.myworkdayjobs.com/External"
+          target="_blank"
+          >Rejoignez-nous, <br />
+          envoyez votre CV !
+        </a>
+      </div>
+    </section>
   </div>
 </body>
 
@@ -473,9 +478,6 @@
       "100 Pays",
       "125 000 clients",
       "+ de 50 000 transactions par jour ",
-      "Et en France, c'est XX salariés sur 2 sites ",
-      " 55% Femmes et 45% Hommes",
-      "un catalogue de 150 fournisseurs proposant 200.000 références  ",
     ],
     part,
     i = 0,
@@ -483,8 +485,8 @@
     len = words.length,
     forwards = true,
     skip_count = 0,
-    skip_delay = 40,
-    speed = 30;
+    skip_delay = 60,
+    speed = 45;
   var wordflick = function () {
     setInterval(function () {
       if (forwards) {
@@ -519,5 +521,58 @@
 
   $(document).ready(function () {
     wordflick();
+  });
+</script>
+
+<script >
+  var words2 = [
+      "800 salariés sur 2 sites",
+      "53% Femmes et 47% Hommes",
+      "Un catalogue de 300 marques ",
+      "200.000 références ",
+      "150 fournisseurs ",
+    ],
+    part2,
+    i2 = 0,
+    offset2 = 0,
+    len2 = words2.length,
+    forwards2 = true,
+    skip_count2 = 0,
+    skip_delay2 = 50,
+    speed2 = 30;
+  var wordflick2 = function () {
+    setInterval(function () {
+      if (forwards2) {
+        if (offset2 >= words2[i2].length) {
+          ++skip_count2;
+          if (skip_count2 == skip_delay2) {
+            forwards2 = false;
+            skip_count2 = 0;
+          }
+        }
+      } else {
+        if (offset2 == 0) {
+          forwards2 = true;
+          i2++;
+          offset2 = 0;
+          if (i2 >= len2) {
+            i2 = 0;
+          }
+        }
+      }
+      part2 = words2[i2].substr(0, offset2);
+      if (skip_count2 == 0) {
+        if (forwards2) {
+          offset2++;
+        } else {
+          offset2--;
+        }
+      }
+      $(".word2").text(part2);
+    }, speed2);
+  };
+
+  $(document).ready(function () {
+    wordflick2();
   });
 </script>
