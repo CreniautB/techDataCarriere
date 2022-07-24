@@ -6,6 +6,21 @@ html {
   font-family: "Work Sans";
 }
 
+.header {
+  width: 1280px;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.header img {
+  width: 1280px;
+}
+
+p,
+li {
+  color: #00548b;
+}
+
 .logoContainer {
   text-align: center;
 }
@@ -66,7 +81,6 @@ html {
   color: #00548b;
   font-size: 27px;
   font-weight: 400;
-  padding-bottom: 0.5em;
   max-width: 45%;
 }
 
@@ -95,7 +109,7 @@ h2 {
 
 .textIntro > p {
   font-size: 1rem;
-  margin: 0;
+  margin-top: 1em;
   line-height: 25px;
   text-align: justify;
   color: #00548b;
@@ -368,6 +382,11 @@ h2 {
 }
 
 @media screen and (max-width: 1000px) {
+  .photosGridContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .mainEspace {
     width: 90%;
   }
@@ -413,24 +432,6 @@ h2 {
   overflow: hidden;
 }
 
-.chiffreCle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #21314d;
-  font-size: 22px;
-  margin-top: 1.5em;
-}
-
-.chiffreCle > div {
-  text-align: center;
-  font-weight: 600;
-}
-
 .splitLeftRight {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,17 +442,17 @@ h2 {
 }
 
 .leftContainerCulture {
-  width: 70%;
+  width: 100%;
 }
 
 .rightContainerCulture {
-  width: 29%;
+  width: 0%;
 }
 
 .leftContainerCulture > h2 {
-  color: #21314d;
+  color: #00548b;
   margin: 0;
-  margin: 2em 0 1em 0;
+  margin: 1em 0 1em 0;
   font-size: 28px;
   font-weight: 500;
 }
@@ -459,9 +460,17 @@ h2 {
 /* Valeurs Entreprise */
 .introValeursEntreprise {
   margin: auto;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
-  color: #21314d;
+  color: #00548b;
+  width: 70%;
+  text-align: center;
+}
+
+.imgContainerValeurs {
+  width: 100%;
+  text-align: center;
+  margin: 2em auto;
 }
 
 .valeursEntrepriseContainerFlex {
@@ -476,18 +485,19 @@ h2 {
 }
 
 .sectionValeursEntreprise {
-  min-width: 400px;
+  width: 45%;
 }
 
 .sectionValeursEntreprise > h3 {
   font-size: 23px;
   font-weight: 500;
-  color: #21314d;
+  color: #00548b;
 }
 
 .sectionValeursEntreprise > p {
   margin: 0.5em 0;
   font-size: 16px;
+  color: #00548b;
 }
 
 /* Politique QHSE */
@@ -501,39 +511,49 @@ h2 {
 }
 
 .politiqueQHSE_content_Right_Part {
-  width: 47%;
+  width: 20vw;
 }
 
 .politiqueQHSE_content_Right_Part > img {
-  width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.politiqueQHSE_content_Left_Part {
-  width: 47%;
-}
-
-.politiqueQHSE_content_Left_Part > img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.demarcheRse > h2 {
-  color: #21314d;
+.politiqueQHSE_content_Left_Part {
+  width: 47%;
+}
+
+.politiqueQHSE_content_Left_Part img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.politiqueQHSE_content_Left_Part li {
+  margin: 1.5em auto;
+  list-style: "-";
+  padding-left: 1em;
+}
+
+.politiqueQHSE_content_Left_Part p {
+  line-height: 25px;
+}
+
+.demarcheRse h2 {
+  color: #00548b;
   font-weight: 500;
 }
 
-.demarcheRse > img {
+.demarcheRse img {
   float: left;
-  margin: 1em 1em 2em 0;
+  margin: 1em 2.5em 2em 0;
 }
 
-.sectionDemarcheRse > h3 {
-  color: #21314d;
+.demarcheRse .sectionDemarcheRse > h3 {
+  color: #00548b;
   margin-bottom: 0.2em;
   font-weight: 500;
 }
@@ -541,6 +561,10 @@ h2 {
 .sectionDemarcheRse > p {
   margin-top: 0.4em;
   font-size: 16px;
+}
+
+.sectionDemarcheRse h6 {
+  color: #00548b;
 }
 
 .politiqueInclusionsContainer {
@@ -559,7 +583,7 @@ h2 {
 }
 
 .politiqueInclusionsContent > h3 {
-  color: #21314d;
+  color: #00548b;
   font-size: 20px;
   font-weight: 500;
 }
@@ -578,15 +602,15 @@ h2 {
 }
 
 .containerVideo > a {
-  width: 350px;
-  margin: auto;
+  width: 150px;
+  margin: 1.5em auto;
 }
 
 .containerVideo > a > img {
-  width: 350px;
-  height: 250px;
+  width: 250px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin: 1.5em auto;
 }
 
 .feedResaux {
@@ -608,7 +632,7 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #21314d;
+  color: #00548b;
   font-size: 22px;
   margin-top: 2em;
 }
@@ -633,7 +657,7 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #21314d;
+  color: #00548b;
   font-size: 22px;
   margin-top: 2em;
 }
@@ -641,5 +665,28 @@ h2 {
 .chiffreCle > div {
   text-align: center;
   font-weight: 600;
+}
+
+.sectionMetierContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sectionMetier {
+  width: 45%;
+}
+
+.sectionMetier h5 {
+  color: #00548b;
+}
+
+.leftMetier {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,11 +5,9 @@
 <link rel="stylesheet" href="style.css" />
 
 <body>
-  <div class="logoContainer">
-    <img src="./assets/logo.png" alt="" />
+  <div class="header">
+    <img src="./assets/header.PNG" alt="" />
   </div>
-  <img class="banniere" src="./assets/ban.jpg" alt="" />
-
   <div class="mainEspace">
     <img src="./assets/hero.png" alt="" />
     <div class="chiffreCle">
@@ -51,9 +49,123 @@
         >
       </div>
     </div>
+    <div class="sectionMetierContainer">
+      <section class="sectionMetier">
+        <h2>Nos métiers Commerciaux</h2>
+        <p>
+          Spécialiste sur une marque ou une typologie de solution et/ou
+          produits, vous êtes le premier point de contact de vos clients. En
+          utilisant vos connaissances spécialisées sur les produits/solutions
+          vous assurez la satisfaction de vos partenaires et développer de
+          nouvelles opportunités commerciales. Vous êtes l'ambassadeur de Tech
+          Data.
+        </p>
+        <h5>
+          Métiers : Commercial Sédentaire, Ingénieur Commercial Terrain,
+          Commercial Sédentaire Spécialiste, Business Development Executive,
+          Business Development Manager...
+        </h5>
+        <img src="./assets/metiers/commerciaux.jpeg" width="300" alt="" />
+      </section>
 
-    <div></div>
+      <section class="sectionMetier leftMetier">
+        <h2>Nos métiers Marketing</h2>
+        <p>
+          Au sein de notre agence de communication en interne ou directement au
+          sein d'une business unit, vous assurez la liaison entre les
+          fournisseurs et les équipes commerciales pour créer des campagnes de
+          marketing et communication conçues pour stimuler la croissance du
+          business.
+        </p>
+        <p>
+          Vous coordonnez la collaboration avec les marques que vous portez, les
+          équipes techniques et avec toutes les fonctions commerciales de Tech
+          Data, pour garantir les meilleures actions marketing, tout en pilotant
+          les processus, les données financières et les reportings de votre
+          segment de produits.
+        </p>
+        <h5>Métiers : Category Manager, Vendor Marketing Management...</h5>
+        <img src="./assets/metiers/marketing.jpeg" width="300" alt="" />
+      </section>
+      <section class="sectionMetier">
+        <h2>Nos métiers Digital</h2>
+        <p>
+          Vous apportez des conseils techniques et vous êtes responsable du
+          modèle de données de nos solutions analytiques et de notre entrepôt de
+          données.
+        </p>
+        <p>
+          Vous êtes expert.e dans la mise en œuvre et l'exploitation de
+          solutions de flux de données, de l'ingestion des données à leur
+          consommation. L'équipe Digital identifie, rassemble et assure des
+          connexions de données fiables à partir d'ensembles de données, afin de
+          soutenir et de permettre de réaliser des initiatives commerciales clés
+          et leur permettre d’être autonomes et à l'aise pour répondre aux
+          besoins en données de nos équipes, systèmes et produits.
+        </p>
+        <p>
+          Vous collaborez avec toutes les équipes internes pour accompagner le
+          business.
+        </p>
+        <h5>
+          Métiers du Digital : Data Analyst, Business Intelligent, Ingénieur
+          Data, E-Commerce, CRM...
+        </h5>
+        <img src="./assets/metiers/digital.jpeg" width="300" alt="" />
+      </section>
+      <section class="sectionMetier leftMetier">
+        <h2>Nos métiers Logistiques</h2>
+        <p>
+          Vous travaillez au sein de l'entrepôt Tech Data pour assurer une
+          manutention efficace, sûre et précise des stocks et la prestation d'un
+          service de haute qualité à tous nos clients.
+        </p>
+        <p>
+          Vous collaborez avec tous les métiers de la Supply Chain et les
+          équipes commerciales.
+        </p>
+        <h5>
+          Métiers de la Logistique : Opérateur Logistique, Cariste,
+          Ordonnancement, Réception / Rangement, Expédition...
+        </h5>
+        <img src="./assets/metiers/logistique.jpeg" width="300" alt="" />
+      </section>
+      <section class="sectionMetier">
+        <h2>Nos métiers Techniques</h2>
+        <p>
+          Vous soutenez les équipes commerciales dans le développement de
+          nouvelles opportunités de vente par la mise à disposition et
+          l'application d'une expertise et de connaissances techniques de nos
+          produits et solutions.
+        </p>
+        <h5>Métiers Techniques : Ingénieur Avant-Vente</h5>
+        <img src="./assets/metiers/technique.jpeg" width="300" alt="" />
+      </section>
+      <section class="sectionMetier leftMetier">
+        <h2>Nos métiers Fonctions Supports</h2>
+        <p>
+          Tech Data c'est aussi des équipes opérationnelles qui sont support au
+          business au quotidien : Achats, Service Client, Administration des
+          Ventes, Pricing et Cotation.
+        </p>
+        <p>
+          Mais aussi, l'IT, les Ressources Humaines, la Finance, Juridique,
+          Projets, Communication Interne et Externe, Workplace Management, QHSE…
+        </p>
+        <img src="./assets/metiers/support.jpeg" width="300" alt="" />
+      </section>
+    </div>
   </div>
 </body>
 
-<script></script>
+<script>
+  function httpGet(theUrl) {
+    var xmlHttp = null;
+    xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", theUrl, false);
+    xmlHttp.send();
+    return xmlHttp.responseXML;
+  }
+  var rssFeedData = httpGet("https://vimeo.com/techdatafrance/videos/rss");
+  console.log(rssFeedData);
+</script>
